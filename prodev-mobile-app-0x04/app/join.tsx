@@ -1,4 +1,4 @@
-import { styles } from "@/styles/_joinstyle";
+import { styles } from "@/styles/_join";
 import { Text, TextInput, View, TouchableOpacity, Image , SafeAreaView, Button} from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 
