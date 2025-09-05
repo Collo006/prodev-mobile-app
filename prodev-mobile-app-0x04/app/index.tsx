@@ -84,7 +84,7 @@ export default function Index() {
         <ImageBackground source={require("@/assets/images/background-image.png")} style={styles.background} resizeMode="cover">
         {/*Other Components go here */}
        <View style={styles.companyLogo}>
-        <Image source={require("@/assets/images/Logo.png")} style={{height:100 ,width:100}}></Image>
+        <Image source={require("@/assets/images/logo.png")} style={{height:100 ,width:100}}></Image>
        </View>
        <View style={styles.textGroup}>
         <Text style={styles.textLarge}>Find your favorite place here</Text>
