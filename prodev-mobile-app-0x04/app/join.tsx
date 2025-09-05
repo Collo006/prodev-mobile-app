@@ -1,5 +1,5 @@
 import { styles } from "@/styles/_join";
-import { Text, TextInput, View, TouchableOpacity, Image , SafeAreaView, Button} from "react-native";
+import { Text, TextInput, View, TouchableOpacity, SafeAreaView} from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -21,7 +21,7 @@ export default function Join(){
               <Text style={styles.formLabel}></Text>
               <View style={styles.formControl}>
               <View style={styles.formPasswordControl}>
-                <TextInput style={styles.passwordControl}/>
+                <TextInput style={styles.passwordControl} />
               </View>
               </View> 
               </View>

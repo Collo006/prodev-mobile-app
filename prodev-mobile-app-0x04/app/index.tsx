@@ -1,3 +1,4 @@
+import { Link, useRouter } from "expo-router";
 import { Text, View, ImageBackground, StyleSheet, Dimensions, Image, TouchableOpacity } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
@@ -71,6 +72,9 @@ buttonGroup:{
 })
 
 export default function Index() {
+
+const router = useRouter()
+
   return (
     <View
       style={{
@@ -92,12 +96,15 @@ export default function Index() {
         <Text style={styles.textSmall}>million properties worldwide</Text>
        </View>
        <View style={styles.buttonGroup}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={()=>{router.push("/join")}}>
           <Text style={{...styles.textSmall,color:"black"}}>Join here</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.transparentButton}>
-          <Text style={styles.textSmall}>Sign In</Text>
+         <Link href="/signin"  push><Text style={styles.textSmall}>Sign In</Text></Link> 
         </TouchableOpacity>
+
+
+
        </View>
        <View style={{alignItems:"center", paddingVertical:20}}>
         <Text style={{color:"white"}}>Continue to home</Text>

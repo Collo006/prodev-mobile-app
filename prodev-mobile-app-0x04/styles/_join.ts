@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   },
   forgotPasswordText: {
     textAlign: 'right',
-    color: '#34967C',
+    color: '#e6e224ff',
     marginTop: 9,
   }
 })
